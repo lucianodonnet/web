@@ -1,0 +1,83 @@
+*{margin:0;}
+
+nav{margin:5px}
+ .navbar ul {
+    margin-top: 10px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+.navbar a {
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    display:center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar li:hover{
+   
+    background-color: #ffffff;
+   
+}
+
+.navbar a:hover{ color:black}
+
+.btn{
+    background-color: #e5c353;
+    border-radius: 30px;
+}
+
+.navbar li{
+   
+    padding: 15px;
+    float:center;
+}
+
+/* Estilos para el header */
+.header {
+    background: linear-gradient(to right, #d4af37, #ffffff, #d4af37); /* Gradiente dorado */
+    padding: 5px 0; /* Espaciado vertical */
+}
+
+/* Contenedor principal del header */
+.header-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Estilos para los textos */
+.header-text {
+    font-size: 40px; /* Tamaño de fuente */
+    font-weight: bold;
+    color: #000; /* Color del texto */
+    margin: 0; /* Elimina márgenes */
+}
+
+/* Estilos para el logo */
+.header-logo {
+    background: none;
+    max-height: 100px; /* Ajusta el tamaño máximo del logo */
+    object-fit: contain; /* Asegura que el logo mantenga proporciones */
+}
+
+.one{
+    width:100%;
+    height: 100vh;
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('fondo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    height: 800px;
+}

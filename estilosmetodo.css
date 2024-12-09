@@ -1,0 +1,426 @@
+*{margin:0;}
+
+nav{margin:5px}
+ .navbar ul {
+    margin-top: 10px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+.navbar a {
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    display:center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar li:hover{
+   
+    background-color: #ffffff;
+   
+}
+
+.navbar a:hover{ color:black}
+
+.btn{
+    background-color: #e5c353;
+    border-radius: 30px;
+}
+
+.navbar li{
+   
+    padding: 15px;
+    float:center;
+}
+
+/* Estilos para el header */
+.header {
+    background: linear-gradient(to right, #d4af37, #ffffff, #d4af37); /* Gradiente dorado */
+    padding: 5px 0; /* Espaciado vertical */
+}
+
+/* Contenedor principal del header */
+.header-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Estilos para los textos */
+.header-text {
+    font-size: 40px; /* Tamaño de fuente */
+    font-weight: bold;
+    color: #000; /* Color del texto */
+    margin: 0; /* Elimina márgenes */
+}
+
+/* Estilos para el logo */
+.header-logo {
+    background: none;
+    max-height: 100px; /* Ajusta el tamaño máximo del logo */
+    object-fit: contain; /* Asegura que el logo mantenga proporciones */
+}
+
+.header-viveka{
+    display:flex;
+    align-items: center;
+    margin:20px
+}
+
+img{
+    height: 100px;}
+
+h2{font-size: 45px;
+padding: 0%;
+margin-left:5px;}
+
+.one{
+    margin: 30px;
+}
+
+h3,h4{
+    text-align: center;
+    margin-top:5px
+}
+
+p{margin-top: 20px;
+text-align: center;}
+
+.metas-integrales {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el tamaño según contenido */
+    gap: 8px;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.metas-integrales-item {
+    height: min(300px);
+    background: linear-gradient(45deg, #d4af37, #ffd700);
+   
+    border-radius: 10px; /* Esquinas redondeadas */
+    text-align: center;
+    display: flex; /* Centrar contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-family: 'Arial', sans-serif; /* Fuente legible */
+    font-size: 1.2rem; /* Tamaño de texto adecuado */
+    color: #000; /* Color del texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.metas-integrales-item:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Incrementa la sombra para más profundidad */
+    background-color: #ffd700; /* Cambia a un color dorado más brillante */
+}
+
+.metas-integrales-item p{
+    margin: 10px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around; /* Espacio entre divisiones */
+    align-items: flex-start; /* Alinea los ítems al inicio */
+    gap: 20px; /* Separación entre bloques */
+    margin: 30px;
+    flex-wrap: wrap; /* Permite que las divisiones se ajusten en pantallas pequeñas */
+  }
+  
+  .category {
+    width: 300px; /* Tamaño fijo para cada división */
+    background: linear-gradient(135deg, #f9f9f9, #ececec); /* Fondo degradado suave */
+    border: 2px solid #d4af37; /* Borde dorado */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efecto de hover */
+  }
+  
+  .category:hover {
+    transform: scale(1.05); /* Zoom al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Más sombra en hover */
+  }
+  
+  .logo {
+    width: 80px; /* Tamaño del logo */
+    height: 80px;
+    margin-bottom: 10px; /* Separación con el texto */
+  }
+  
+  p {
+    font-family: 'Arial', sans-serif; /* Fuente legible */
+    font-size: 1rem;
+    color: #333; /* Texto en gris oscuro */
+    line-height: 1.5; /* Mejor lectura */
+  }
+  
+  .grid {
+    margin:30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta las columnas automáticamente */
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background: linear-gradient(135deg, #d4af37, #ffd700); /* Degradado dorado */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    color: #fff; /* Texto blanco */
+    position: relative; /* Para el efecto de brillito */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  }
+  
+  .grid-item h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff; /* Blanco */
+  }
+  
+  .grid-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  /* Efecto de hover */
+  .grid-item:hover {
+    transform: scale(1.03); /* Zoom ligero */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Más sombra */
+  }
+  
+  .grid-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg); /* Inclinación para el efecto de brillo */
+    transition: left 0.5s ease;
+  }
+  
+  .grid-item:hover::after {
+    left: 100%; /* Mueve el brillo */
+  }
+ 
+  
+  .quote-block {
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fffbea, #f4e3c1); /* Fondo cálido y suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .quote-block h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #8b572a; /* Color marrón elegante */
+    text-transform: uppercase;
+  }
+  
+  blockquote {
+    margin: 0;
+    padding-left: 15px;
+    color: #4a4a4a; /* Texto gris oscuro */
+    font-style: italic;
+  }
+  
+  blockquote p {
+    margin-bottom: 15px;
+  }
+  
+  blockquote footer {
+    margin-top: 15px;
+    text-align: right;
+    color: #8b572a;
+    font-weight: bold;
+  }
+  
+  blockquote cite {
+    font-style: normal;
+  }
+  
+  /* Efecto de hover para resaltar */
+  .quote-block:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Más sombra */
+    transform: translateY(-5px); /* Ligero movimiento hacia arriba */
+    transition: all 0.3s ease;
+  }
+
+ 
+  
+  .methodology-container {
+   
+    background: linear-gradient(135deg, #fffbea, #f4e3c1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #4a4a4a;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #8b572a;
+    margin-bottom: 20px;
+  }
+  
+  .phase {
+    margin-bottom: 20px;
+  }
+  
+  .phase h4 {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 5px;
+  }
+  
+  .phase ul {
+    padding-left: 20px;
+  }
+  
+  .phase ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sessions {
+    margin-top: 30px;
+  }
+  
+  .session-group {
+    background: #faf3e6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #d4af37;
+    border-radius: 5px;
+  }
+  
+  .session-group h5 {
+    color: #8b572a;
+    margin-bottom: 10px;
+  }
+  
+  .session-group p {
+    margin: 0;
+    color: #555;
+  }
+  
+  /* Efecto de hover */
+  .methodology-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  
+  
+  .profile-container {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .profile-image {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #d4af37;
+  }
+  
+  .profile-content h3 {
+    color: #8b572a;
+    margin-bottom: 15px;
+  }
+  
+  .profile-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profile-content ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 16px;
+  }
+  
+  .profile-content ul li:before {
+    content: "●";
+    color: #d4af37;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 18px;
+  }
+
+
+  
+  h3 {
+    color: #8b572a;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .methodology-container,
+  .guidelines-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .methodology-content,
+  .guidelines-content {
+    padding: 10px;
+  }
+  
+  .methodology-content p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .guidelines-content ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  .guidelines-content ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .methodology-container {
+    background: #faf0e6;
+  }
+  
+  .guidelines-container {
+    background: #f0f8ff;
+  }
+  
+  
