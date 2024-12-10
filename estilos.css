@@ -1,78 +1,86 @@
-*{margin:0;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-nav{margin:5px}
- .navbar ul {
-    margin-top: 10px;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: space-around;
-  }
+.header {
+  background: linear-gradient(to right, #d4af37, #ffffff, #d4af37); /* Gradiente dorado */
+  padding: 2vh 0; /* Espaciado relativo a la altura de la ventana */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh; 
+  height: 20vh; 
+}
+
+.header-text {
+  font-size: 8vh; 
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  text-align: center; 
+}
+
+.header-logo {
+  max-height: 20vh; 
+  object-fit: contain;
+}
+
+.navbar {
+  padding: 1vh 2vw;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 3vh; /* Espaciado entre elementos del navbar */
+}
+
+.navbar li {
+  padding: 1vh 2vh; /* Espaciado interno para los botones */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Animación suave */
+}
 
 .navbar a {
-    display: inline;
-    text-decoration: none;
-    text-align: center;
-    display:center;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5vh; /* Ajusta el tamaño del texto */
 }
 
-.navbar li:hover{
-   
-    background-color: #ffffff;
-   
+.navbar li:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco transparente al pasar el ratón */
 }
 
-.navbar a:hover{ color:black}
-
-.btn{
-    background-color: #e5c353;
-    border-radius: 30px;
+.navbar a:hover {
+  color: black; /* Cambia el color del texto a negro */
 }
+
+
+
 
 .navbar li{
    
     padding: 15px;
-    float:center;
+    
 }
 
-/* Estilos para el header */
-.header {
-    background: linear-gradient(to right, #d4af37, #ffffff, #d4af37); /* Gradiente dorado */
-    padding: 5px 0; /* Espaciado vertical */
-}
 
-/* Contenedor principal del header */
-.header-container {
-    display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    gap: 20px; /* Espacio entre elementos */
-}
-
-/* Estilos para los textos */
-.header-text {
-    font-size: 40px; /* Tamaño de fuente */
-    font-weight: bold;
-    color: #000; /* Color del texto */
-    margin: 0; /* Elimina márgenes */
-}
-
-/* Estilos para el logo */
-.header-logo {
-    background: none;
-    max-height: 100px; /* Ajusta el tamaño máximo del logo */
-    object-fit: contain; /* Asegura que el logo mantenga proporciones */
-}
 
 .one{
     width:100%;
     height: 100vh;
     background-size: cover; /* Ajusta el tamaño de la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-  
+    background-attachment: fixed;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('fondo.jpg');
     background-position: center;
     background-size: cover;
@@ -80,6 +88,14 @@ nav{margin:5px}
 
 .content{
     height: 250px;
+}
+
+.qa3{
+color:#d4af37;
+font-family: sans-serif;
+text-align: center;
+font-size: 35px;
+border-bottom: #000 20px;
 }
 
 .fraseprincipal{
@@ -95,23 +111,27 @@ nav{margin:5px}
 
 p{
    
-    margin: 40px;
-    text-align: center;
+    margin-top:30px;
+    text-align: justify;
 }
 
 .parrafo{
-    font-size: 20px;
+    font-size: 25px;
     font-family: sans-serif;
+    color: grey;
 }
 .qa{
     font-family: sans-serif;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
+    margin: 20px;
 }
 
 
 .contenedorm{
-    background-image: url('mancha.png');
+    margin: 50px 40px 50px 40px;
+    
+   
     background-repeat: no-repeat; /* No repetir la imagen */
     background-position: center; /* Centrar la imagen */
     background-size: contain; /* Ajustar el tamaño de la imagen */
@@ -119,18 +139,51 @@ p{
     
 }
 
+
+.tipoproyecto{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.tipoproyecto-card{
+  text-align: center;
+  justify-content: center;
+  width: auto;
+  height: 30vh;
+  padding:5vh;
+
+  margin: 5px;
+  border-radius: 10%;
+  box-sizing:content-box
+}
+
+.tipoproyecto-card-img{
+  width:50%;
+  height:50%;
+  border-radius: 10%;
+  border-color: black;
+  margin-top: 10px;
+
+}
+
+h5{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
 .container {
-    height: 100vh;
-    width: 100vw;
+    height: 70vh;
+    width: 100vh;
     max-height: 600px;
     max-width: 1200px;
-    min-height: 600px;
+    min-height: 100px;
     min-width: 1100px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    padding-top: 820px
+    align-items: top;
+    margin: 20px auto 20px;
+   
   }
   
   .panel {
@@ -195,21 +248,22 @@ p{
   }
   
   .card1 {
-    background-image: url("https://assets.codepen.io/489403/brazil.jpg");
+    background-image: url('mediatcion.jpg');
     background-repeat: no-repeat;
-    background-size: 200% 120%;
+    background-size: cover;
+    
   }
   
   .card2 {
-    background-image: url("https://assets.codepen.io/489403/belize.jpg");
+    background-image: url("im1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
   
   .card3 {
-    background-image: url("https://assets.codepen.io/489403/egypt.jpg");
+    background-image: url("img3.jpg");
     background-repeat: no-repeat;
-    background-size: 140% 100%;
+    background-size: cover;
   }
   
   .ring:before,
@@ -282,16 +336,18 @@ p{
 
  .viveka{
     display: flex;
+    justify-content: center;
  }
 
  .logov{
-    width: 250px;
-    height: 250px;
+    width: 40vh;
+    height: 40vh;
  }
 
 .programas{
     background: linear-gradient(135deg, #FFFBEA 20%, #FFD700 60%, #FFC107 80%, #FFECB3 100%);
     margin: 30px;
+    padding:10px;
 }
 
 .gallery-grid {
@@ -351,4 +407,10 @@ background-color: #d4af37;
 
 #golden-button:active {
     transform: scale(0.95);
+}
+
+.parrafo2{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: grey;
 }
