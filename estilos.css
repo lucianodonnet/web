@@ -73,7 +73,7 @@
     
 }
 
-.nosotros__flex,.vison__flex{
+.nosotros__flex{
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -94,6 +94,15 @@
   flex-direction: row-reverse;
 }
 
+.vision__flex {
+  display: flex; /* Crea un contenedor flexible */
+  flex-direction: row; /* Alinea los hijos en una fila */
+  gap: 10px; /* Espacio entre la imagen y el párrafo */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin: 20px auto; /* Espaciado alrededor del contenedor */
+}
 
 
 .one{
@@ -140,15 +149,28 @@ p{
     font-size: 25px;
     font-family: sans-serif;
     color: black;
+    text-align: center;
 }
 
-.parrafo__nosotros, .parrafo__mision, .parrafo__vision{
+.parrafo__nosotros, .parrafo__mision, .parrafo__vision,.parrafo{
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   color:black;
   line-height: 3; /* Espaciado amplio */
   letter-spacing: 0.2px; /* Espaciado sutil */
   margin: 0 40px 0 40px;
+  flex: 1;
+
+}
+
+.parrafo__programas{
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color:black;
+  line-height: 1.5; /* Espaciado amplio */
+  letter-spacing: 0.2px; /* Espaciado sutil */
+  margin: 0px 40px 0 40px;
+  flex: 1;
 
 }
 .qa{
@@ -156,6 +178,13 @@ p{
     text-align: center;
     font-size: 30px;
     margin: 20px;
+}
+
+.h2__programas{
+  font-family: 'Merriweather', serif;
+  text-align: left;
+  font-size: 30px;
+  margin-left:48vh;
 }
 
 
@@ -173,7 +202,7 @@ p{
 
 .tipoproyecto{
   display: flex;
-  margin: auto;
+ 
   justify-content: space-around;
 }
 
@@ -374,6 +403,8 @@ h5{
  .logov{
     width: 40vh;
     height: 40vh;
+    border-right: 5px solid #d4af37;
+   
  }
 
 .programas{
@@ -441,12 +472,7 @@ background-color: #d4af37;
     transform: scale(0.95);
 }
 
-.parrafo2{
-  font-size: 20px;
-  font-family: sans-serif;
-  color: grey;
-  margin: 20px;
-}
+
 
 .programa{
   text-align: center;
@@ -460,7 +486,7 @@ background-color: #d4af37;
 
 }
 
-.frase{
+.frase,.proyectoseccion,.funcion{
   border-top: 5px solid #d4af37;
   border-bottom: 5px solid #d4af37;
   margin: 40px 0 40px 0;
@@ -470,3 +496,8 @@ background-color: #d4af37;
   background-position: fixed;
 
 }
+
+.proyectoseccion,.funcion{
+  background-image: linear-gradient(rgba(253, 253, 253, 0.458),rgba(204, 202, 202, 0.438));
+}
+
