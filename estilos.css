@@ -188,6 +188,8 @@ p{
 }
 
 
+
+
 .contenedorm{
     margin: 50px 40px 50px 40px;
     
@@ -290,16 +292,17 @@ h5{
   }
   
   .ring {
-    color: #fffbf1;
+    color: #ffffff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 170px;
+    text-align: center;
   }
   
   .card {
-    background: #f0ead6;
+    background: #ffc60d;
     position: relative;
     transition: all 1s;
     height: 270px;
@@ -308,9 +311,15 @@ h5{
   }
   
   .card1 {
-    background-image: url('mediatcion.jpg');
+    background-image: 
+        linear-gradient(
+          rgba(253, 253, 253, 0.458), /* Color superior del gradiente */
+          rgba(204, 202, 202, 0.438)  /* Color inferior del gradiente */
+        ),
+        url('mediatcion.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
     
   }
   
@@ -401,8 +410,9 @@ h5{
  }
 
  .logov{
-    width: 40vh;
-    height: 40vh;
+  width: 40vh; /* O el tamaño deseado */
+  height: auto; /* Mantiene las proporciones */
+  object-fit: contain; 
     border-right: 5px solid #d4af37;
    
  }
@@ -451,6 +461,7 @@ background-color: #d4af37;
 }
 
 #golden-button {
+    margin: 10px;
     background: linear-gradient(45deg, #ffd700, #ffa500);
     border: none;
     color: white;
@@ -499,5 +510,14 @@ background-color: #d4af37;
 
 .proyectoseccion,.funcion{
   background-image: linear-gradient(rgba(253, 253, 253, 0.458),rgba(204, 202, 202, 0.438));
+}
+
+.contenedor__programas{
+  border: 2px solid #d4af37;
+  background-image: linear-gradient(rgba(253, 253, 253, 0.458),rgba(204, 202, 202, 0.438)),url('logo\ terra\ mastay.png');
+  background-size: contain;
+  backdrop-filter: blur(15px); /* Efecto de desenfoque */
+  padding:30px;
+  margin-bottom: 100px;
 }
 

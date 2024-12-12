@@ -70,39 +70,88 @@ nav{margin:5px}
 .header-viveka{
     display:flex;
     align-items: center;
-    margin:20px
+    margin:30px;
+    border-left: 3px solid #d4af37;
+    gap: 20px;
 }
 
-img{
-    height: 100px;}
+.imgvi{
+    height: 100px;
+  margin-left: 20px;}
 
 h2{font-size: 45px;
 padding: 0%;
 margin-left:5px;}
 
 .one{
-    margin: 30px;
+    margin: 30px 0px 30px 0px;
+    padding: 60px;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('sol.png');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #d4af37;
 }
 
 h3,h4{
     text-align: center;
-    margin-top:5px
+    margin-top:5px;
+ 
+   
+}
+
+
+
+.h4__principal{
+  font-size: 25px;
+}
+.h3__tituloprincipal{
+  font-size: 32px;
+  letter-spacing: 4px;
 }
 
 p{margin-top: 20px;
-text-align: center;}
+text-align: center;
+color: red;}
+
+
 
 .metas-integrales {
     margin: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el tamaño según contenido */
+    grid-template-columns: repeat(3, minmax(50px, 1fr)); /* Ajusta el tamaño según contenido */
     gap: 8px;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content:center /* Centra el contenido horizontalmente */
+}
+
+.titulos{
+  letter-spacing: 5px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+  font-size: 30px;
+  margin-left: 35px;
+}
+
+.dos{
+  text-align: right;
+  margin-right: 35px;
+}
+
+.parrafo{
+  color: black;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.metas,.dirigido{
+  margin: 80px auto;
 }
 
 .metas-integrales-item {
-    height: min(300px);
-    background: linear-gradient(45deg, #d4af37, #ffd700);
+  border: 2px solid #d4af37;
+    height: min(200px);
+    background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('flor.jpg');
    
     border-radius: 10px; /* Esquinas redondeadas */
     text-align: center;
@@ -117,6 +166,9 @@ text-align: center;}
     cursor: pointer; /* Indica interactividad */
 }
 
+.metas-integrales-item:first-child{
+  grid-column: span 2;
+}
 .metas-integrales-item:hover {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Incrementa la sombra para más profundidad */
@@ -129,7 +181,7 @@ text-align: center;}
 
 .categories {
     display: flex;
-    justify-content: space-around; /* Espacio entre divisiones */
+    justify-content:space-between; /* Espacio entre divisiones */
     align-items: flex-start; /* Alinea los ítems al inicio */
     gap: 20px; /* Separación entre bloques */
     margin: 30px;
@@ -137,8 +189,9 @@ text-align: center;}
   }
   
   .category {
-    width: 300px; /* Tamaño fijo para cada división */
-    background: linear-gradient(135deg, #f9f9f9, #ececec); /* Fondo degradado suave */
+    width: 38vh; /* Tamaño fijo para cada división */
+    height: 38vh;
+    background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('flor.jpg');/* Fondo degradado suave */
     border: 2px solid #d4af37; /* Borde dorado */
     border-radius: 10px; /* Esquinas redondeadas */
     padding: 15px; /* Espaciado interno */
@@ -168,17 +221,18 @@ text-align: center;}
   .grid {
     margin:30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta las columnas automáticamente */
+    grid-template-columns: repeat(1, minmax(250px, 1fr)); /* Ajusta las columnas automáticamente */
     gap: 20px;
     padding: 10px;
   }
   
   .grid-item {
-    background: linear-gradient(135deg, #d4af37, #ffd700); /* Degradado dorado */
+    background-image: linear-gradient(rgba(253, 253, 253, 0.458),rgba(204, 202, 202, 0.438));
+  backdrop-filter: blur(15px); /* Efecto de desenfoque */ /* Degradado dorado */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra elegante */
-    color: #fff; /* Texto blanco */
+    color: black; /* Texto blanco */
     position: relative; /* Para el efecto de brillito */
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
@@ -188,13 +242,13 @@ text-align: center;}
     margin-bottom: 10px;
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: #fff; /* Blanco */
+    color: #d4af37; /* Blanco */
   }
   
   .grid-item p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #fff;
+    color: black;
   }
   
   /* Efecto de hover */
@@ -221,11 +275,14 @@ text-align: center;}
  
   
   .quote-block {
-    margin: 20px;
-    padding: 20px;
-    background: linear-gradient(135deg, #fffbea, #f4e3c1); /* Fondo cálido y suave */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-top: 2px solid #d4af37;
+  border-bottom: 2px solid #d4af37;
+  margin: 40px 0 40px 0;
+  background-image: linear-gradient(rgba(253, 253, 253, 0.458),rgba(204, 202, 202, 0.438)),url('mandala.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  padding: 50px;
   }
   
   .quote-block h4 {
@@ -238,7 +295,7 @@ text-align: center;}
   blockquote {
     margin: 0;
     padding-left: 15px;
-    color: #4a4a4a; /* Texto gris oscuro */
+    color:black; /* Texto gris oscuro */
     font-style: italic;
   }
   
@@ -249,7 +306,7 @@ text-align: center;}
   blockquote footer {
     margin-top: 15px;
     text-align: right;
-    color: #8b572a;
+    color: black;
     font-weight: bold;
   }
   
@@ -268,28 +325,20 @@ text-align: center;}
   
   .methodology-container {
    
-    background: linear-gradient(135deg, #fffbea, #f4e3c1);
-    border-radius: 10px;
-    padding: 20px;
+    background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('flor.jpg');
+  
+    padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #4a4a4a;
   }
   
-  h3 {
-    text-align: center;
-    color: #8b572a;
-    margin-bottom: 20px;
-  }
+
   
   .phase {
     margin-bottom: 20px;
   }
   
-  .phase h4 {
-    color: #d4af37;
-    border-bottom: 2px solid #d4af37;
-    padding-bottom: 5px;
-  }
+
   
   .phase ul {
     padding-left: 20px;
@@ -304,21 +353,23 @@ text-align: center;}
   }
   
   .session-group {
-    background: #faf3e6;
-    margin-bottom: 15px;
+   
+  background-image: linear-gradient(rgba(253, 253, 253, 0.458),rgba(204, 202, 202, 0.438));
+  backdrop-filter: blur(15px); /* Efecto de desenfoque */
+  margin-bottom: 25px;
     padding: 15px;
-    border-left: 5px solid #d4af37;
+    border-left: 3px solid #d4af37;
     border-radius: 5px;
   }
   
   .session-group h5 {
-    color: #8b572a;
+    color: black;
     margin-bottom: 10px;
   }
   
   .session-group p {
     margin: 0;
-    color: #555;
+    color: black;
   }
   
   /* Efecto de hover */
@@ -332,19 +383,20 @@ text-align: center;}
   
   .profile-container {
     display: flex;
-    align-items: flex-start;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+    align-items: center;
+    background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('flor.jpg');
+    box-shadow: 0 4px 8px rgba(255, 227, 44, 0.1);
+    padding: 40px;
+    margin: 100px 30px 100px 30px;
+    border: 2px solid #d4af37;
+    background-size: cover;
+    backdrop-filter: blur(15px);
   }
   
   .profile-image {
     flex-shrink: 0;
-    width: 150px;
-    height: 150px;
+    width: 50vh;
+    height: 50vh;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
@@ -362,7 +414,7 @@ text-align: center;}
   }
   
   .profile-content ul li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-left: 20px;
     position: relative;
     font-size: 16px;
@@ -379,20 +431,16 @@ text-align: center;}
 
 
   
-  h3 {
-    color: #8b572a;
-    text-align: center;
-    margin-bottom: 15px;
-  }
+ 
   
   .methodology-container,
   .guidelines-container {
-    background: #fff;
-    border-radius: 10px;
+    background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('flor.jpg');
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
+    padding: 60px 20px 60px 20px;
+    border: 2px solid #d4af37;
+    margin: 100px 30px 100px 30px;
   }
   
   .methodology-content,
@@ -412,15 +460,50 @@ text-align: center;}
   
   .guidelines-content ul li {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 20px;
   }
   
   .methodology-container {
-    background: #faf0e6;
+    background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('flor.jpg');
   }
   
   .guidelines-container {
     background: #f0f8ff;
   }
   
+  .aspectosdiferenciales{
+  border: 2px solid #d4af37;
+  background-image: linear-gradient(rgba(253, 253, 253, 0.458),rgba(204, 202, 202, 0.438)),url('monumento.jpg');
+  background-size: cover;
+  backdrop-filter: blur(15px); /* Efecto de desenfoque */
+  padding:30px;
+  margin:100px 0 100px 0;
+  background-attachment: fixed;
+  }
+
+  .h4__metodologia{
+    font-size: 20px;
+    color: #d4af37;
+    text-align: left;
+    margin: 20px 0px 20px 0px;
+  }
+
+  .ul__metodologia{
+    list-style-type: none;
+    margin:0px;
+  }
+
+  li{
+    text-decoration: none;
+  }
   
+  .quote{
+    text-align: center;
+    margin: 30px;
+  }
+
+  .me{
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+  }
