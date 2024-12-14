@@ -108,6 +108,8 @@ h3,h4{
 .h3__tituloprincipal{
   font-size: 32px;
   letter-spacing: 4px;
+  margin-bottom: 30px;
+  color: #9a7a13
 }
 
 p{margin-top: 20px;
@@ -125,8 +127,8 @@ color: red;}
 }
 
 .titulos{
-  letter-spacing: 5px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px;
+  font-family:'Montserrat', sans-serif;
   text-align: left;
   font-size: 30px;
   margin-left: 35px;
@@ -140,7 +142,7 @@ color: red;}
 .parrafo{
   color: black;
   font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -190,7 +192,7 @@ color: red;}
   
   .category {
     width: 38vh; /* Tamaño fijo para cada división */
-    height: 38vh;
+    height: 45vh;
     background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('flor.jpg');/* Fondo degradado suave */
     border: 2px solid #d4af37; /* Borde dorado */
     border-radius: 10px; /* Esquinas redondeadas */
@@ -211,12 +213,7 @@ color: red;}
     margin-bottom: 10px; /* Separación con el texto */
   }
   
-  p {
-    font-family: 'Arial', sans-serif; /* Fuente legible */
-    font-size: 1rem;
-    color: #333; /* Texto en gris oscuro */
-    line-height: 1.5; /* Mejor lectura */
-  }
+ 
   
   .grid {
     margin:30px;
@@ -278,7 +275,7 @@ color: red;}
     border-top: 2px solid #d4af37;
   border-bottom: 2px solid #d4af37;
   margin: 40px 0 40px 0;
-  background-image: linear-gradient(rgba(253, 253, 253, 0.458),rgba(204, 202, 202, 0.438)),url('mandala.png');
+  background-image: linear-gradient(rgba(253, 253, 253, 0.895),rgba(255, 255, 255, 0.743)),url('mandala.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
@@ -506,4 +503,67 @@ color: red;}
     text-align: center;
     color: black;
     margin-bottom: 30px;
+  }
+  p ,.parrafo{
+    font-family: 'Montserrat', sans-serif; /* Fuente legible */
+    font-size: 16px;
+    color: #333; /* Texto en gris oscuro */
+    line-height: 1.5; /* Mejor lectura */
+  }
+
+  .dos{
+    text-align: justify;
+  }
+
+  .footer {
+    background: linear-gradient(to right, #d4af37, #ffffff, #d4af37); /* Gradiente dorado */
+    padding: 30px 10px;
+    color: #333; /* Color de texto */
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Secciones del footer */
+  .footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Logo */
+  .footer-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #444;
+  }
+  
+  /* Contacto */
+  .footer-section.contacto p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+  }
+
+  .footer-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 50%; /* Forma circular */
+    width: 120px; /* Tamaño del círculo */
+    height: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 0 auto 10px auto; /* Centrado */
   }
