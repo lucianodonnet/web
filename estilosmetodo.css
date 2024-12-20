@@ -100,11 +100,13 @@ margin-left:5px;}
 h4{
   font-size: 30px;
   text-align: center;
+  margin-left: 30px;
 }
 
 h3{
   font-size: 25px;
   text-align: center;
+
 }
 
 .h4__header{
@@ -140,12 +142,14 @@ P{
   font-family:'Montserrat', sans-serif;
   text-align: left;
   font-size: 30px;
+  color: #d4af37;
   
 }
 
 .dos{
   text-align: right;
   margin-right: 35px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -170,6 +174,7 @@ P{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
     transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
     cursor: pointer; /* Indica interactividad */
+    padding: 5px;
 }
 
 .metas-integrales-item:first-child{
@@ -204,6 +209,7 @@ P{
     text-align: center; /* Centra el contenido */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
     transition: transform 0.3s, box-shadow 0.3s; /* Efecto de hover */
+    padding: 5px;
   }
   
   .category:hover {
@@ -289,7 +295,7 @@ P{
   .quote-block h4 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #8b572a; /* Color marrón elegante */
+    color:  #d4af37 /* Color marrón elegante */;
     text-transform: uppercase;
   }
   
@@ -297,7 +303,7 @@ P{
     margin: 0;
     padding-left: 15px;
     color:black; /* Texto gris oscuro */
-    font-style: italic;
+    
   }
   
   blockquote p {
@@ -399,8 +405,8 @@ P{
   
   .profile-image {
     flex-shrink: 0;
-    width: 50vh;
-    height: 50vh;
+    width: 25%;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
@@ -410,7 +416,7 @@ P{
   }
   
   .profile-content h3 {
-    color: #8b572a;
+    color:  #d4af37;
     margin-bottom: 15px;
   }
   
@@ -506,6 +512,7 @@ P{
   .quote{
     text-align: center;
     margin: 30px;
+    color: #d4af37;
   }
 
   .me{
