@@ -194,7 +194,7 @@ P{
 .categories {
     display: flex;
     justify-content:space-between; /* Espacio entre divisiones */
-    align-items: flex-start; /* Alinea los ítems al inicio */
+    align-items:stretch; /* Alinea los ítems al inicio */
     gap: 20px; /* Separación entre bloques */
     margin: 30px;
     flex-wrap: wrap; /* Permite que las divisiones se ajusten en pantallas pequeñas */
@@ -202,7 +202,7 @@ P{
   
   .category {
     width: 38vh; /* Tamaño fijo para cada división */
-    height: 45vh;
+    height: auto;
     background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('flor.jpg');/* Fondo degradado suave */
     border: 2px solid #d4af37; /* Borde dorado */
     border-radius: 10px; /* Esquinas redondeadas */
@@ -409,7 +409,7 @@ P{
     flex-shrink: 0;
     width: 25%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10px;
     object-fit: cover;
     margin-right: 20px;
     border: 3px solid #d4af37;
