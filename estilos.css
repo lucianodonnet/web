@@ -353,6 +353,7 @@ p{
   letter-spacing: 0.2px; /* Espaciado sutil */
   margin: 0px 40px 0 40px;
   flex: 1;
+  text-align: justify;
 
 }
 
@@ -574,5 +575,25 @@ p{
 }
 h2{
   font-size: 30px;
+}
+
+.programas{
+  margin:0px;
+}
+
+.programa{
+  margin: 0px;
+}
+
+.contenedor__programas{
+padding: 0px;
+}
+
+.parrafo__programas{
+  margin: 2px;
+}
+
+.programa5{
+  background-color: #d4af37;
 }
 }

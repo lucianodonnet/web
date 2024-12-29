@@ -118,13 +118,14 @@ h3{
 P{
   color: black;
   font-size: 20px; /* Escala automáticamente según el ancho del viewport */
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  font-family: 'Poppins',sans-serif
   
 }
 
 .parrafo__header{
   margin:20px 40px 20px 40px;
+  text-align: justify;
  
 }
 
@@ -134,7 +135,8 @@ P{
     display: grid;
     grid-template-columns: repeat(3, minmax(50px, 1fr)); /* Ajusta el tamaño según contenido */
     gap: 8px;
-    justify-content:center /* Centra el contenido horizontalmente */
+    justify-content:center /* Centra el contenido horizontalmente */;
+   
 }
 
 .titulos{
@@ -162,9 +164,8 @@ P{
   border: 2px solid #d4af37;
     height: auto;
     background-image: linear-gradient(rgba(250, 247, 247, 0.7),rgba(253, 252, 252, 0.7)),url('flor.jpg');
-   
     border-radius: 10px; /* Esquinas redondeadas */
-    text-align: center;
+    text-align: justify;
     display: flex; /* Centrar contenido */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
@@ -210,6 +211,7 @@ P{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
     transition: transform 0.3s, box-shadow 0.3s; /* Efecto de hover */
     padding: 5px;
+   
   }
   
   .category:hover {
@@ -492,6 +494,9 @@ P{
   margin:100px 0 100px 0;
   background-attachment: fixed;
   }
+  .p__center{
+    text-align: center;
+  }
 
   .h4__metodologia{
     font-size: 20px;
@@ -521,7 +526,9 @@ P{
     margin-bottom: 30px;
   }
  
-
+  .p__category{
+    text-align: center;
+  }
   .dos{
     text-align: justify;
   }
@@ -601,6 +608,10 @@ P{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+
+  .category{
+    align-content: center;
   }
   
   .header-container {
