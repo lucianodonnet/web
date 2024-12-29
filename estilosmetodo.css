@@ -516,7 +516,6 @@ P{
   
   .quote{
     text-align: center;
-    margin: 30px;
     color: #d4af37;
   }
 
@@ -626,5 +625,11 @@ P{
   
   .header-logo {
     max-height: 10vh; /* Reduce el tamaño máximo del logo */
+  }
+  .header-viveka{
+    flex-direction: column;
+    border-bottom: 3px solid #d4af37;
+    border-left: none;
+
   }
   }
